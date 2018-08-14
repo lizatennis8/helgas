@@ -1,49 +1,23 @@
 $(document).ready(function() {
   $("#fortuneteller").submit (function(event) {
-    var witchA = $('.witcha:checked').length;
-    var witchB = $('.witchb:checked').length;
-    var witchC = $('.witchc:checked').length;
+    var witchA = $('.winnie:checked').length;
+    var witchB = $('.mary:checked').length;
+    var witchC = $('.sarah:checked').length;
     console.log(witchA);
     console.log(witchB);
     console.log(witchC);
     event.preventDefault();
-    $("#witchreveal").show();
 
-
-
-
-
-
-
-    // var animalInput = $("input:checkbox[name=animals]:checked").count();
-    // console.log(animalInput);
-
-
-
-    // var flyInput = $("input:checkbox[name=fly]:checked").each(function() {
-    //
-    // var hexInput = $("input:checkbox[name=hex]:checked").each(function()
-    // });
-
-  // var valueArray = [animalIngredient, flyInput, hexInput];
-  // console.log(valueArray);
-
-
-    // var witchaInput = $("input:checkbox[name=animals]:checked").val();
-    // var witchbInput = $("input:checkbox[name=fly]:checked").val();
-    // var witchcInput = $("input:checkbox[name=hex]:checked").val();
-    //
-    // console.log(witchaInput);
-    // console.log(witchbInput);
-    // console.log(witchcInput);
-    // var animalIngredient = $(this).val();
-// var animalInput = ("input:checkbox[name=animals]:checked").length;
-// var flyInput = ("input:checkbox[name=fly]:checked").length;
-// console.log(hexInput);
-//
-// var comboLength = animalInput + flyInput + hexInput;
-
+    if (witchA > witchB && witchA > witchC) {
+      $("#winnie").show();
+    } else if (witchB > witchA && witchB > witchC) {
+      $("#mary").show();
+    }  else {
+      $("#sarah").show();
+    }
   });
+
+
 });
 
 
