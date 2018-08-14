@@ -15,6 +15,8 @@ $(document).ready(function() {
     }  else {
       $("#sarah").show();
     }
+
+    $("#fortuneteller").hide();
   });
 
 

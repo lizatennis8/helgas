@@ -1,9 +1,66 @@
+body {
+  background-image: url("spooky.jpg");
+  background-size: cover;
+  font-family: 'Jua', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+  color: #f4cb42;
+}
+
+p {
+  color: #f4cb42;
+}
+
+.title {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 40px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+input {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 30px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+}
+
+.hat {
+  width: 250px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+}
+
 #winnie {
   display: none;
+  padding-top: 30px;
 }
+
 #sarah {
   display: none;
+  padding-top: 30px;
 }
+
 #mary {
   display: none;
+  padding-top: 30px;
 }
